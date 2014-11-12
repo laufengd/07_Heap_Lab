@@ -24,6 +24,7 @@ Questions
 #### 2. Exercises 10.1 and 10.2 from http://opendatastructures.org/ods-cpp/10_3_Discussion_Exercises.html
 
 10.1    
+	
 	add(7) 	
 	index	0 1 2 3  4  5  6  7  8  9  10 11 12 13 14  
 
