@@ -70,6 +70,7 @@ void Heap<Pri,T>::grow(){
 	for(int i=0; i < arrSize; i++){
 		myNewArray[i] = backingArray[i];
 }	
+
 	delete[] backingArray;
 	backingArray = myNewArray;
 	arrSize = newSize;
@@ -147,16 +148,12 @@ void Heap<Pri,T>::trickleDown(unsigned long index){
 
 template<class Pri, class T>
 std::pair<Pri,T> Heap<Pri,T>::remove(){
-  
-	
-	
+
   std::pair<Pri,T> tmp = backingArray[0];
 
   if(numItems == 0){
 	throw std::string("no more items to remove");
-  
   }
-
   backingArray[0] = backingArray[numItems-1];
   numItems--;
   trickleDown(0);
